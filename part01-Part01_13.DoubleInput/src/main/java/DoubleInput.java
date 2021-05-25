@@ -7,6 +7,12 @@ public class DoubleInput {
         Scanner scanner = new Scanner(System.in);
 
         // write your program here
+        System.out.println("Give a number:");
+        
+        // store the input as a double variable
+        Double number = Double.valueOf(scanner.nextLine());
+        
+        System.out.println("You gave the number "+number);
 
     }
 }
