@@ -22,8 +22,18 @@ public class Swap {
         // Implement here
         // asking for the two indices
         // and then swapping them
+        int index1 = Integer.valueOf(scanner.nextLine());
+        int index2 = Integer.valueOf(scanner.nextLine());
+        
+        // create a variable to store a value during the swap
+        int helper = array[index1];
+        // swap value at first index with value at second
+        array[index1] = array[index2];
+        // swap value at second index with the previous value from first (stored in the helper)
+        array[index2] = helper;
 
         System.out.println("");
+        
         index = 0;
         while (index < array.length) {
             System.out.println(array[index]);
