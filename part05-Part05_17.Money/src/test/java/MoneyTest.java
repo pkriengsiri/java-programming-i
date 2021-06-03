@@ -126,7 +126,7 @@ public class MoneyTest {
         Money secondMoneyObject = new Money(2, 0);
 
         String codeToRun = "Money firstMoneyObject = new Money(10, 0);"
-                + "Money secondMoneyObjecy = new Money(2, 0);"
+                + "Money secondMoneyObjecyt = new Money(2, 0);"
                 + "Money tennerMinusTwoEuros = firstMoneyObject.minus(secondMoneyObject);";
 
         Money firstMinusSecond = classToBeTested.method(firstMoneyObject, methodToBeTested).returning(Money.class).taking(Money.class).

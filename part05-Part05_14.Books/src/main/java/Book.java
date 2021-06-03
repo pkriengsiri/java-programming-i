@@ -16,5 +16,28 @@ public class Book {
     public int getPublicationYear() {
         return publicationYear;
     }
+    
+    public boolean equals(Object object) {
+        if(this == object) {
+            return true;
+        }
+        
+        if(!(object instanceof Book)) {
+            return false;
+        }
+        
+        Book bookToCompare = (Book) object;
+        
+        if(!(this.name.equals(bookToCompare.name))) {
+            return false;
+        }
+        
+        if(!(this.publicationYear == bookToCompare.publicationYear)) {
+            return false;
+        }
+        
+        return true;
+        
+    }
 
 }
