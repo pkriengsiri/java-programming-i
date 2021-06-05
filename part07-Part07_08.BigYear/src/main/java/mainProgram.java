@@ -9,6 +9,11 @@ public class mainProgram {
         // as a parameter
 
         Scanner scan = new Scanner(System.in);
+        BirdDatabase sightings = new BirdDatabase();
+        
+        UserInterface ui = new UserInterface(sightings, scan);
+        
+        ui.start();
 
     }
 
